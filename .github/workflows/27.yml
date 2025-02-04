@@ -36,7 +36,7 @@ jobs:
         with:
           token: ${{ secrets.TNKEY }}
           repository: nvthang2303/HyperTN_Code
-          ref: 2.7T
+          ref: Mod_apk
                  
       - name: Prepare Enviroment
         run: |
@@ -53,4 +53,4 @@ jobs:
         run: |
            #cd HyperTN_Code
            sudo chmod 777 -R *
-           sudo bash BuildTN.sh ${{ github.event.inputs.ROM_URL }}
+           sudo bash ModAPK.sh ${{ github.event.inputs.ROM_URL }}
