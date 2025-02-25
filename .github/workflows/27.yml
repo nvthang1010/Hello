@@ -1,4 +1,4 @@
-name: Auto Build 2.7T
+name: Auto Build 2.7 VN
 
 on:
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
         with:
           token: ${{ secrets.TNKEY }}
           repository: nvthang2303/HyperTN_Code
-          ref: 2.7TT
+          ref: 2.7
                  
       - name: Prepare Enviroment
         run: |
